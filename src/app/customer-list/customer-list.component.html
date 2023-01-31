@@ -1,0 +1,6 @@
+<div *ngFor="let customer of customers">
+  <div class="container" [routerLink]="['/users', customer.id]">
+    <h2 class="username">{{ customer.username }}</h2>
+    <h2 class="id">{{ customer.id }}</h2>
+  </div>
+</div>
